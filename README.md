@@ -31,7 +31,7 @@ https://drive.google.com/file/d/1EfybrW7PNoh8FzrPlxqxe31jB3_jSJXJ/view?usp=shari
 (Extracto del resemun de clases de Argentina Programa)
 
 
-#Importante:-
+# Importante:-
 
 Es necesario que una vez se creada la base de datos, se carguen en la BD de Rol lo siguiente:
 id| Rol
