@@ -1,24 +1,38 @@
 # BackEnd_Portfolio_PerottoGhiNicolas
 BackEnd del Proyecto Integrador para Argentina Programa
 
-A Spring Boot applicaiton to act as a backend for My Website. The front end is also a git project available at the following location :-
+Una aplicación Spring Boot para actuar como Backend para Mi sitio web. El Frontend también es un proyecto git disponible en la siguiente ubicación: -
+https://github.com/Arcadeuz/FrontEnd_Portfolio_PerottoGhiNicolas
 
-https://github.com/subhamsaha-manu/personal-porfolioUI.
+# Características importantes:-
 
-Kindly, go through the Readme.md file to understand how to deploy or view the app.
+1. Estructura adecuada del proyecto con modelos, repositorio, servicios y dtos.
+2. Los Modelos están estructurados de acuerdo con el objeto de colección MYSQL.
+3. Los DTO se han escrito como réplicas de las clases de modelo que interactúan entre la interfaz de usuario (aplicación) y la capa de servicio, mientras que los modelos interactúan entre la capa de servicio y base de datos.
+4. Lombok se ha utilizado para generar Getter Setters y Constructors donde sea necesario para las diversas clases, lo que reduce la cantidad de código repetitivo que se debe escribir.
+5.  Spring Data JPA se ha utilizado para conectarse con la configuración de la base de datos MYSQL en el servicio clevercloud.
+6.  Autenticación de APIs basada en tokens con Spring y JWT .
+7. La aplicación está alojada en Heroku en la siguiente ubicación:-
+https://backendportfoliomnpg.herokuapp.com
+10. Y la aplicación de interfaz de usuario general también se aloja a través de Heroku y se puede acceder a ella en:-
 
-As mentioned this project is a backend written in Spring Boot. Few salient features are :-
+# Funcionalidad del Proyecto:-
+Soporta Multiples Usuario, los cuales pueden tener una o mas personas
+Cada persona tiene:
+-Acerca De Mi
+-Educacion
+-Experiencia Laboral
+-Habildades
+-Proyectos
 
-Salient Features :-
-Proper project structure with models, repository,services and dtos.
-The Models are structured in accordance with the MongoDB collection object.
-DTOs have been written as replicas of the Model classes which interact between the UI(Application) and Service Layer, whereas the Models interact between the Service and Database layer.
-To seamlessly map between the Model and DTO I have used MapStruct api's, and also introduced some custom mapping rules.
-Lombok has been used to generate Getter Setters and Constructors where ever required for the various classes, which reduce the amount of boilerplate code to be written.
-Spring Data has been used to connect with the Mongo database setup in mLab service of Heroku.
-Spring Email has been used to send email notification when any user wants to connect via the Contact Me form in the UI app.
-Application wide logging has also been introduced with the help of Lombok and relevant annotations.
-The individual app is hosted in Heroku in the following location :- https://dashboard.heroku.com/apps/my-personal-porfolio-app
-And the overall UI app is also hosted via Heroku and is accessible at :- https://subham-sportfolio.herokuapp.com/
-The master branch of this project also acts as a template for future Spring Boot apps.
-For any queries or issues feel free to contact at :- subhamsaha90@gmail.com
+
+Como implementar el proyecto en CleverCloud, Heroku y Firebase:
+https://drive.google.com/file/d/1EfybrW7PNoh8FzrPlxqxe31jB3_jSJXJ/view?usp=sharing
+(Extracto del resemun de clases de Argentina Programa)
+
+
+#Importante:
+Es necesario que una vez se creada la base de datos, se carguen en la BD de Rol lo siguiente:
+id| Rol
+1 | ROL_USER
+2 | ROL_ADMIN
